@@ -1,8 +1,11 @@
 import '@/styles/globals.scss';
 import '@/styles/index.scss';
+import AppLayout from './../components/layout/layout';
 
 export default function App({ Component, pageProps }) {
   return (
-    <Component {...pageProps} />
+    <AppLayout>
+      <Component {...pageProps} />
+    </AppLayout>
   );
 }

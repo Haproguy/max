@@ -1,9 +1,7 @@
-import Link from "next/link";
-
-
-export default function Index() {
+export default function MainPage() {
     return (
-        <>
-        </>
+        <div>
+            <h1>HaYoungKwon's Blog</h1>
+        </div>
     );
 }
