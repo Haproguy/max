@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import { useRouter } from 'next/router';
 
-import { getFeaturedEvents, getAllEvents } from '../../dummy';
+import { getAllEvents } from '../../dummy';
 import List from '@/components/events/list';
 import EventSearch from '@/components/events/event-search';
 
@@ -9,13 +9,12 @@ import EventSearch from '@/components/events/event-search';
 const AllEventPage = () => {
     const router = useRouter();
 
-    const featuredEvents = getFeaturedEvents();
     const allEvents = getAllEvents();
 
     const findEventHandler = (year, month) => {
-        const fullPush = `/events/${year}/${month}`;
+        const fullPush = '/event/filter' + '/' + year + '/' + month;
 
-        router.push(fullPush);
+        router.push({ fullPush });
     }
 
     return (

@@ -12,7 +12,10 @@ export default function Header(props) {
             <nav className={styles.navigation}>
                 <ul>
                     <li>
-                        <Link href="/events">Browse All Events</Link>
+                        <Link href="/events">파일기반라우팅</Link>
+                    </li>
+                    <li>
+                        <Link href='/products'>데이터패칭</Link>
                     </li>
                 </ul>
             </nav>

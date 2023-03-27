@@ -30,15 +30,36 @@
 
     .navigation {
         height: 100%;
-
         font-size: 1.2rem;
-
         display: flex;
         gap: 1px;
 
-        a {
-            padding: 1px;
-            color: $mint;
+        ul {
+            display: flex;
+            gap: 15px;
+
+            li {
+
+                a {
+                    padding: 1px;
+                    color: $mint;
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width : 768px) {
+    .header {
+        height: 3rem;
+
+        .logo {
+            font-size: 1.1rem;
+        }
+
+        .navigation {
+            font-size: 0.8rem;
         }
     }
 }

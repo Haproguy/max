@@ -1,8 +1,8 @@
 import List from "@/components/events/list";
 import Button from "@/components/UI/button";
 import { useRouter } from "next/router";
-import { getFilteredEvents } from '../../dummy';
-import ResultsTitle from './../../components/events/results-title';
+import { getFilteredEvents } from '../../../dummy';
+import ResultsTitle from '../../../components/events/results-title';
 import ErrorAlert from "@/components/UI/error-alert";
 
 const FilterEventPage = () => {
